@@ -33,10 +33,10 @@ class ZBSpider(object):
         results = []
         page = 1
         while True:
-            if page == 505:
-                zbprint("该标的存在问题，换一个查询标的")
-                last_one_title = self.sql.get_last_one_title("1")
-                page = 1
+            #if page == 505:
+            #    zbprint("该标的存在问题，换一个查询标的")
+            #    last_one_title = self.sql.get_last_one_title("1")
+            #    page = 1
             # 检查数据是否在列表中存在
             if last_one_title in results:
                 # 若存在： 按顺序分割列表，将顺序后的数据存入数据库
